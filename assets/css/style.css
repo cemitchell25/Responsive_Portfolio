@@ -59,6 +59,7 @@ h3 {
   margin: 0 0 30px;
   overflow: auto;
   color: #fff;
+  padding-right: 10px;
   background: #fff;
   border-bottom: 2px solid #ccc;
 }
@@ -112,13 +113,14 @@ footer {
 /* sidebar */
 
 .sidebar {
-  float: right;
-  width: 100%;
-  max-width: 270px;
+float: left;
+  width: 270px;
   padding: 30px;
-  margin-bottom: 20px;
-  background: #fff;
+  margin-bottom: 20px;  
+  background-color: #fff;
   border: 1px solid #ddd;
+  margin-top: 100px;
+  margin-left: 30px;
 }
 
 h3,
@@ -143,7 +145,7 @@ h3,
 /* main */
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 30px;
 }
 
 .main-section {
@@ -154,6 +156,7 @@ h3,
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
+  margin-top: 100px;
 }
 
 /* portfolio page */
@@ -236,4 +239,78 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 950px) {
+
+    .main-section {
+    margin-top: 85px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+     margin-top: 0px;
+     width: 650px;
+     margin-left: 0px;
+
+  }
+
+
+@media screen and (max-width: 768px) {
+
+  .main-section {
+    margin-top: 75px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    padding-right: 30px;
+     width: 100%;
+     margin-top: 0px;
+     margin-left: 0px;
+     max-width: 650px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+
+  #logo {
+    width: 110%;
+    text-align:center;
+
+  }
+
+  #masthead {
+  position: static;
+
+
+  }
+
+    nav {
+    width: 95%;
+    text-align: center;
+    padding-bottom: 10px
+
+  }
+
+   .main-section {
+   margin-top: 0px;
+  }
+
+    .sidebar {
+    width:100%;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+
+  .work {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+
+  }
+
 }
